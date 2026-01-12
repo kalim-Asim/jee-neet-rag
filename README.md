@@ -86,7 +86,7 @@ This ensures **accurate, syllabus-based** answers instead of random LLM response
 ### 🧩 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/bikram993298/jee-neet-rag.git
+git clone https://github.com/kalim-Asim/jee-neet-rag.git
 cd jee-neet-rag
 ```
 
@@ -306,44 +306,6 @@ Frontend → Display Chat Response
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! 🎉
-To contribute:
-
-1. **Fork** the repository
-2. **Create** a new branch
-
-   ```bash
-   git checkout -b feature/my-feature
-   ```
-3. **Commit** your changes
-
-   ```bash
-   git commit -m "Added new feature"
-   ```
-4. **Push** to your fork
-
-   ```bash
-   git push origin feature/my-feature
-   ```
-5. **Submit a Pull Request**
-
-### 💡 Suggestions
-
-* Improve RAG retrieval ranking
-* Add support for image-based question answering (Gemini Vision)
-* Enhance UI animations or add dark mode
-* Add quiz/question generator using the RAG database
-
----
-
-## 🧾 License
-
-MIT License © 2025
-Developed with ❤️ by **[Bikram Barman](https://github.com/bikram993298)**
-
----
 
 ## 🌟 Demo Preview (Example)
 
