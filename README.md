@@ -58,13 +58,13 @@ This ensures **accurate, syllabus-based** answers instead of random LLM response
 
 ## ⚙️ Features
 
-✅ **RAG Pipeline** — retrieves context from NCERT and past paper data
-✅ **AI Tutor Chatbot** — Chat-style interface for question-answering
-✅ **Gemini API** — Uses Google’s free Gemini API (no OpenAI key required)
-✅ **FAISS Vector DB** — Efficient and local semantic search
-✅ **React UI** — Modern, mobile-friendly chat design
-✅ **Environment-based config** — Works locally or in production easily
-✅ **Easy Dataset Expansion** — Just drop `.txt` files to add new chapters
+- **RAG Pipeline** — retrieves context from NCERT and past paper data
+- **AI Tutor Chatbot** — Chat-style interface for question-answering
+- **Gemini API** — Uses Google’s free Gemini API (no OpenAI key required)
+- **FAISS Vector DB** — Efficient and local semantic search
+- **React UI** — Modern, mobile-friendly chat design
+- **Environment-based config** — Works locally or in production easily
+- **Easy Dataset Expansion** — Just drop `.txt` files to add new chapters
 
 ---
 
