@@ -1,5 +1,5 @@
 import pdfplumber
-import os
+# import os
 from pathlib import Path
 
 def extract_text_from_pdf(pdf_path):
@@ -23,10 +23,10 @@ def extract_text_from_pdf(pdf_path):
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(text)
         
-        print(f"✅ Successfully extracted text from {pdf_path.name}")
+        print(f"Successfully extracted text from {pdf_path.name}")
         return True
     except Exception as e:
-        print(f"❌ Error processing {pdf_path.name}: {str(e)}")
+        print(f"Error processing {pdf_path.name}: {str(e)}")
         return False
 
 def process_pdfs():

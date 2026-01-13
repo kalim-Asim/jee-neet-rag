@@ -6,7 +6,7 @@ import numpy as np
 import pickle
 from tqdm import tqdm
 
-BASE = Path(__file__).resolve().parents[2]  # Go up one more level to reach project root
+BASE = Path(__file__).resolve().parents[2]  
 DATA_DIR = BASE / "data"
 NCERT_DIR = DATA_DIR / "ncert"
 EMBED_DIR = DATA_DIR / "embeddings"

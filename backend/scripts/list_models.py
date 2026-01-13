@@ -2,7 +2,6 @@ import os
 from dotenv import load_dotenv
 import google.generativeai as genai
 
-# Load backend .env
 load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '..', '.env'))
 api_key = os.getenv('GOOGLE_API_KEY') or os.getenv('GEMINI_API_KEY')
 if not api_key:
@@ -36,4 +35,3 @@ try:
 except Exception as e:
     print('Failed to list models:', e)
     raise SystemExit(2)
-    
