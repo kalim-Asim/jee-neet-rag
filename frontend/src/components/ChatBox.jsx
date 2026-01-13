@@ -2,6 +2,8 @@ import React, { useState, useRef, useEffect } from 'react'
 import Message from './Message'
 import Loader from './Loader'
 
+const url = `${import.meta.env.VITE_API_URL ?? 'http://localhost:8000'}/api/chat`;
+
 export default function ChatBox() {
   const [input, setInput] = useState('')
   const [messages, setMessages] = useState([])
@@ -22,7 +24,7 @@ export default function ChatBox() {
 
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_API_URL ?? 'http://localhost:8000'}/api/chat`,
+        url,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -38,7 +40,7 @@ export default function ChatBox() {
     } catch (err) {
       setMessages((prev) => [
         ...prev,
-        { role: 'assistant', text: '⚠️ Error: ' + err.message },
+        { role: 'assistant', text: 'Error: ' + err.message },
       ])
     } finally {
       setLoading(false)
@@ -54,7 +56,15 @@ export default function ChatBox() {
 
   return (
     <div className="flex flex-col h-full">
-      <div style={{ minHeight: 300, maxHeight: '65vh', overflowY: 'auto', padding: 12, border: '1px solid #eee', borderRadius: 8, background: '#fafafa', marginBottom: 12 }}>
+      <div style={{ 
+        minHeight: 300, 
+        maxHeight: '65vh', 
+        overflowY: 'auto', 
+        padding: 12, 
+        border: '1px solid #eee', 
+        borderRadius: 8, 
+        background: '#fafafa', 
+        marginBottom: 12 }}>
         {messages.map((m, i) => (
           <Message key={i} role={m.role} text={m.text} />
         ))}
